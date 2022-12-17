@@ -1,0 +1,16 @@
+.card {
+    grid-column: span 4;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 3px;
+    margin:5px;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:44rem) {
+    .card {
+        grid-column: span 12;
+    }
+    
+}

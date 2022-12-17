@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-form</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="root">
+        <header class="header">
+            <h1>Register Form</h1>
+        </header>
+
+        <main class="main">
+            <form class="register" action="/register" method="POST">
+                <label class="register__label">
+                    <span class="register__name-label">Name</span>
+                    <input name="name" class="register__name">
+                    <span class="register__name-error">
+                        A name is required
+                    </span>
+                </label>
+
+                <label class="register__label">
+                    <span class="register__email-label">Email</span>
+                    <input name="email" type="text" class="register__email">
+                    <span class="register__email-error"></span>
+                </label>
+
+                <label class="register__label">
+                    <span class="register__confirm-label">Confirm Email</span>
+                    <input name="confirm" type="text" class="register__confirm">
+                    <span class="register__confirm-error"></span>
+                </label>
+
+                <label class="register__label">
+                    <span class="wants-spam">wants-spam</span>
+                    <input type="checkbox" name="wants-spam" class="wants-spam" checked>
+                </label>
+
+                <label class="register__label">
+                    <span class="tier">
+                        Please select a tier:
+                    </span>
+                    <select name="tier" class="tier">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="1">Fish</option>
+                        <option value="2">Fish</option>
+                        <option value="3">Only Fish</option>
+                    </select>
+                </label>
+
+                    <button type="submit" class="register__submit">Submit</button>
+                    
+            </form>
+
+        </main>
+
+        <footer class="footer">
+            <h2>
+                PLEASE SEE OUR POLICY
+            </h2>
+        </footer>
+    </div>
+</body>
+
+</html>

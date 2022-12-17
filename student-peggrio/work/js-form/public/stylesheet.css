@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+div {
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.register__label {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding: 15px;
+}
+
+.register__name-label {
+    grid-column: span 6;
+}
+.register__name {
+    grid-column: span 3;
+}
+.register__email-label {
+    grid-column: span 6;
+}
+.register__email {
+    grid-column: span 3;
+}
+.register__confirm-label {
+    grid-column: span 6;
+}
+.register__confirm {
+    grid-column: span 3;
+}
+.wants-spam {
+    grid-column: span 6;
+}
+.tier {
+    grid-column: span 6;
+}
+
+header {
+    background-color: pink;
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+    text-align: center;
+}
+
+/* .register__label {
+    margin: 1rem;
+    grid-column: span 12;
+} */
+
+.register__name-error {
+    display: none;
+    color: red;
+}
+
+.register__name-invalid {
+    display: initial;
+    grid-column: span 2;
+}
+
+.register__email-error {
+    color: red;
+    display: initial;
+}
+
+.register__email-error:empty {
+    display: none;
+}
+
+.register__confirm-error {
+    color: red;
+    display: initial;
+}
+
+.register__confirm-error:empty {
+    display: none;
+}
+
+@media screen and (max-width: 40rem) {
+
+    .register__label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .register__name-label {
+        grid-column: span 12;
+    }
+    .register__name {
+        grid-column: span 12;
+    }
+    .register__email-label {
+        grid-column: span 12;
+    }
+    .register__email {
+        grid-column: span 12;
+    }
+    .register__confirm-label {
+        grid-column: span 12;
+    }
+    .register__confirm {
+        grid-column: span 12;
+    }
+    .wants-spam {
+        grid-column: span 12;
+    }
+    .tier {
+        grid-column: span 12;
+    } */
+}
+

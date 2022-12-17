@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.root {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.decoration {
+    color:red;
+}
+.footer {
+    grid-area: footer;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media screen and (max-width: 50rem) {
+    .info {
+        flex-direction: column;
+        max-width: 25rem;
+    }
+}

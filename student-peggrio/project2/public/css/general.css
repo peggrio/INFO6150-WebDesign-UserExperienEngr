@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: papayawhip;
+}
+
+/*-----------------------header------------------------------*/
+
+.header {
+    background-color: burlywood;
+}
+
+.header__title {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: burlywood;
+    align-items: center;
+}
+
+.logo {
+    grid-column: span 1;
+}
+
+.title {
+    grid-column: span 11;
+    text-align: center;
+    align-items: center;
+}
+
+.skip-content {
+    text-align: center;
+}
+
+.skip-to-content-link {
+    border-radius: 0.5rem;
+    width: 10rem;
+    padding: 0.5rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+    border: 1px solid black;
+}
+
+.skip-to-content-link:focus {
+    transform: translateY(2%);
+}
+
+.menu {
+    grid-column: span 12;
+    background-color: burlywood;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+margin-left: 2rem;
+margin-right: 2rem;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+.menu_item {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.menu_item:hover {
+    border-radius: 0.5rem;
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.menu_items_shrink {
+    display: none;
+}
+
+.menu_logo {
+    display: none;
+}
+
+/*----------------------footer-------------------------*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: burlywood;
+    padding: 2rem;
+}
+
+button {
+    height: 2rem;
+    background-color: burlywood;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*-------------------adaptive design-----------------*/
+@media screen and (max-width: 44rem) {
+
+    .menu {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .header__title {
+        grid-column: span 11;
+    }
+
+    .menu_logo {
+        grid-column: span 1;
+        cursor: pointer;
+    }
+
+    .menu_items_shrink_show {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        translate: -30% 70%;
+        background-color: burlywood;
+        border: 1px solid black;
+    }
+
+    .menu_shrink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu_item_shrink {
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+
+    .menu_item_shrink:hover {
+        background-color: blue;
+        color: white;
+
+    }
+
+    .menu_logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+}

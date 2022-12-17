@@ -1,0 +1,16 @@
+.cats {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 2rem;
+    padding: 1rem;
+    background-color: aquamarine;
+}
+
+img {
+    grid-column: span 3;
+}
+
+p {
+    grid-column: span 9;
+}

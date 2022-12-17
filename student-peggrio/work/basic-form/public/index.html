@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="root">
+        <header class="header">
+            <img class="header__logo" src="https://media2.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif"
+                alt="a funny logo gif" style="width:48px;height:48px;">
+            <h1>This is a header</h1>
+        </header>
+        <main class="main">
+
+            <form action="/submit" method="POST">
+                <div class="info"><label for="name">Name:<span class="decoration">*</span></label>
+                <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="info"><label for="email">Email:<span class="decoration">*</span></label>
+                <input type="email" name="email" id="email>" required></div>
+
+
+                <div class="info"><label for="annoy_me">Do you want us to send you annoying emails?</label>
+                <input type="checkbox" name="annoy_me" id="annoy_me" checked></div>
+
+
+                <div class="info"><label for="tier">Please select a tier:<span class="decoration">*</span></label>
+                <select name="tier" id="tier" required>
+
+                <option value="">Please select</option>
+                <option value="1">Silver Tier</option>
+                <option value="2">Gold Tier</option>
+                <option value="3">Platinum Tier</option>
+
+                </select>
+            </div>
+
+                <div><button type="submit">Register</button></div>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <a class="footer__link" href="#">privacy policy</a>
+        </footer>
+    </div>
+</body>
+
+</html>

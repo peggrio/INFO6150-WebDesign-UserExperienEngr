@@ -1,0 +1,42 @@
+.catMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    background-color: lightseagreen;
+}
+
+.cat {
+    border-radius: 3px;
+    border: 2px solid darkblue;
+    margin: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 0;
+    transition: 0.2s;
+    transform: translateY(-25px);
+    background-color: aquamarine;
+}
+
+h1,h2 {
+    text-decoration: none;
+}
+
+.active {
+    opacity: 1;
+    transition: 0.2s;
+    transform: translateY(5px);
+    background-color: aquamarine;
+}
+footer {
+    background-color: lightseagreen;
+    font-weight: bold;
+    text-decoration: none;
+}

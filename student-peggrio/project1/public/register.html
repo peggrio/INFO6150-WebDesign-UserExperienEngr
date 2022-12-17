@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link href='https://css.gg/bee.css' rel='stylesheet'>
+    <link href='https://css.gg/ghost-character.css' rel='stylesheet'>
+    <link href='https://css.gg/debug.css' rel='stylesheet'>
+    <link href='https://css.gg/user-list.css' rel='stylesheet'>
+    <link href='https://css.gg/browser.css' rel='stylesheet'>
+    <link href='https://css.gg/home.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <h1>REGISTER</h1>
+            <nav class="globalnav">
+                <menu class="globalnav_menu">
+                    <a class="globalnav__link" href="index.html"><i class="gg-home"></i><span>HOME</span></a>
+                    <a class="globalnav__link" href="about.html"><i class="gg-browser"></i><span>ABOUT</span></a>
+                    <a class="globalnav__link" href="register.html"><i class="gg-user-list"></i><span>REGISTER</span></a>
+                </menu>
+            </nav>   
+        </header>
+
+        <main class="main">
+            <div class="border__holder">
+                <div class="register__welcome">
+                    <h2>WELCOME</h2>
+                </div>
+
+                <form action="/register" method="POST">
+                    <div class="info"><label for="username">Username:<span class="must_input">*</span></label>
+                        <input type="text" name="username" id="username" placeholder="Enter an username" required>
+                    </div>
+
+                    <div class="info"><label for="email">Email:<span class="must_input">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter an email address" required>
+                    </div>
+
+                    <div class="info"><label for="password">Password:<span class="must_input">*</span></label>
+                        <input type="password" name="password" id="password" placeholder="Enter a password" required>
+                    </div>
+
+                    <div class="info"><label for="annoy_me">I want some spam in my email box</label>
+                        <input type="checkbox" name="annoy_me" id="annoy_me" checked>
+                    </div>
+
+                    <div class="info"><label for="tier">Please select an animal:<span class="must_input">*</span></label>
+                        <select name="tier" id="tier" required>
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="1">Fish</option>
+                            <option value="2">Fish</option>
+                            <option value="3">Only Fish</option>
+
+                        </select>
+                    </div>
+                    <div class="click">
+                        <button type="submit" class="btn">
+                            <span>REGISTER</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a class="footer__link" href="#">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+
+</html>

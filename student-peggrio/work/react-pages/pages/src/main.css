@@ -1,0 +1,11 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 3px;
+    background-color: brown;
+
+}
+
+div {
+    grid-column: span 12;
+}

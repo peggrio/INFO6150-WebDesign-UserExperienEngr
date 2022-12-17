@@ -1,0 +1,69 @@
+@import url(general.css);
+@import url('https://css.gg/menu.css');
+/* "below CSS adapted from https://css.gg under the MIT License" */
+
+.side__picture_left,
+.side__picture_right {
+    width: 125px;
+    height: 125px;
+}
+
+.part1,
+.part2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+.part1 {
+    grid-template-areas: "p side__picture_right";
+}
+
+.part1 p {
+    grid-area: p;
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+.side__picture_right {
+    grid-area: side__picture_right;
+    grid-column-start: 12;
+    grid-column-end: 12;
+}
+
+
+
+.side__picture {
+    grid-column: span 2;
+}
+
+
+main p {
+    grid-column: span 10;
+    margin: 2rem;
+    font-size: 1rem;
+}
+
+.to__bold {
+    font-weight: bold;
+}
+
+/*-------------------adaptive design-----------------*/
+@media screen and (max-width: 44rem) {
+
+    .part1,
+    .part2 {
+        display: block;
+    }
+
+    .side__picture_right {
+        float: right;
+    }
+
+    .side__picture_left {
+        float: left;
+    }
+}
